@@ -1,0 +1,11 @@
+{
+    "name": "eusebiu/laravel-spark-camera",
+    "description": "Profile photo camera support for Laravel Spark.",
+    "license": "MIT",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Eusebiu\\LaravelSparkCamera\\": "src/"
+        }
+    }
+}
