@@ -25,5 +25,7 @@
     #profile-photo-camera-preview video {
         width: 100% !important;
         height: auto !important;
+        min-width: 100px;
+        min-height: 100px;
     }
 </style>

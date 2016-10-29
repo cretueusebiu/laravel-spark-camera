@@ -21,9 +21,13 @@ class CameraServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
+                __DIR__.'/../resources/views' => resource_path('views/vendor/camera'),
+            ], 'views');
+
+            $this->publishes([
                 __DIR__ . '/../resources/assets/js/update-profile-photo-camera.js' =>
                     resource_path('assets/js/spark-components/settings/profile/update-profile-photo-camera.js')
-            ], 'resources');
+            ], 'assets');
         }
     }
 

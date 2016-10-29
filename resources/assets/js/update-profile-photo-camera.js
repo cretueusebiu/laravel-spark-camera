@@ -3,6 +3,11 @@ var modal = '#profile-photo-camera-modal';
 var preview = '#profile-photo-camera-preview';
 
 module.exports = {
+    mounted() {
+        this.initCamera();
+    },
+
+    // Vue 1.x
     ready() {
         this.initCamera();
     },
@@ -53,7 +58,11 @@ module.exports = {
                     .then((response) => {
                         this.closeCamera();
 
-                        this.$dispatch('updateUser');
+                        if (window.Bus) {
+                            window.Bus.$emit('updateUser');
+                        } else {
+                            this.$dispatch('updateUser');
+                        }
 
                         this.form.finishProcessing();
                     })

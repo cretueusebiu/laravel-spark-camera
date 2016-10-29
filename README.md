@@ -10,7 +10,7 @@ This package adds support for capturing images from your computer or phone camer
 
 - Add `Eusebiu\LaravelSparkCamera\CameraServiceProvider::class` to your `providers` array in `config/app.php`
 
-- Run `php artisan vendor:publish --provider="Eusebiu\LaravelSparkCamera\CameraServiceProvider"`
+- Run `php artisan vendor:publish --provider="Eusebiu\LaravelSparkCamera\CameraServiceProvider" --tag=assets`
 
 - Edit `resources/views/vendor/spark/settings/profile/update-profile-photo.blade.php`:
     - Add `@include('camera::camera-modal')` right before closing the last div.
