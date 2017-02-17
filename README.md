@@ -23,7 +23,7 @@ This package adds support for capturing images from your computer or phone camer
 
 - Run `npm install --save webcamjs`
 
-- Run `gulp`
+- Run `npm run dev`
 
 
 ## 
